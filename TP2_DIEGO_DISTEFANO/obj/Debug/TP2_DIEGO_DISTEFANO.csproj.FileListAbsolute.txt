@@ -1,0 +1,9 @@
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO\TP2_DIEGO_DISTEFANO\bin\Debug\TP2_DIEGO_DISTEFANO.exe.config
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO\TP2_DIEGO_DISTEFANO\bin\Debug\TP2_DIEGO_DISTEFANO.exe
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO\TP2_DIEGO_DISTEFANO\bin\Debug\TP2_DIEGO_DISTEFANO.pdb
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO\TP2_DIEGO_DISTEFANO\obj\Debug\TP2_DIEGO_DISTEFANO.csprojAssemblyReference.cache
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO\TP2_DIEGO_DISTEFANO\obj\Debug\TP2_DIEGO_DISTEFANO.Properties.Resources.resources
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO\TP2_DIEGO_DISTEFANO\obj\Debug\TP2_DIEGO_DISTEFANO.csproj.GenerateResource.cache
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO\TP2_DIEGO_DISTEFANO\obj\Debug\TP2_DIEGO_DISTEFANO.csproj.CoreCompileInputs.cache
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO\TP2_DIEGO_DISTEFANO\obj\Debug\TP2_DIEGO_DISTEFANO.exe
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO\TP2_DIEGO_DISTEFANO\obj\Debug\TP2_DIEGO_DISTEFANO.pdb

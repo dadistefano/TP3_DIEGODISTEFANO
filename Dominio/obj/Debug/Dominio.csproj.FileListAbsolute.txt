@@ -1,0 +1,18 @@
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO\Dominio\bin\Debug\Dominio.dll
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO\Dominio\obj\Debug\Dominio.dll
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO v0.2\Dominio\bin\Debug\Dominio.dll
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO v0.2\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO v0.2\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO v0.2\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO v0.2\Dominio\obj\Debug\Dominio.dll
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP2_DIEGO_DISTEFANO v0.2\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP3_DIEGO_DISTEFANO v0.6\Dominio\bin\Debug\Dominio.dll
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP3_DIEGO_DISTEFANO v0.6\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP3_DIEGO_DISTEFANO v0.6\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP3_DIEGO_DISTEFANO v0.6\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP3_DIEGO_DISTEFANO v0.6\Dominio\obj\Debug\Dominio.dll
+C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP3_DIEGO_DISTEFANO v0.6\Dominio\obj\Debug\Dominio.pdb
