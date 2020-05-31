@@ -24,6 +24,8 @@ namespace Negocio
 								  "MARCAS.Descripcion as 'DescripcionMarca', CATEGORIAS.Id as 'IdCategoria', CATEGORIAS.Descripcion as " +
 								  "'DescripcionCategoria', ARTICULOS.ImagenUrl, ARTICULOS.Precio from ARTICULOS inner join MARCAS on ( " +
 								  "ARTICULOS.IdMarca = MARCAS.Id ) inner join CATEGORIAS on ( ARTICULOS.IdCategoria = CATEGORIAS.Id )");
+				
+
 				datos.ejecutarLector();
 				while (datos.lector.Read())
 				{

@@ -21,17 +21,13 @@ namespace CarritoWeb
             {
                 ArticuloNegocio negocio = new ArticuloNegocio();
                 listaArticulo = negocio.listar();
-                //dgvArticulo.DataSource = listaArticulo;
-                //dgvArticulo.DataBind();
+                dgvArticulo.DataSource = listaArticulo;
+                dgvArticulo.DataBind();
 
                 if (!IsPostBack)
                 {
 
-                    articulosRep.DataSource = listaArticulo;
-                    articulosRep.DataBind();
-
-                    //repeaterCategorias.DataSource = categorias;
-                    //repeaterCategorias.DataBind();
+                 
                 }
 
 

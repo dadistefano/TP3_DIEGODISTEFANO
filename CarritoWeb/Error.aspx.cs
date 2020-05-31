@@ -11,7 +11,9 @@ namespace CarritoWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(Session["error"]!=null)
+                Lberror.Text = Session["error"].ToString();
+            // + Session.SessionID]
         }
     }
 }
