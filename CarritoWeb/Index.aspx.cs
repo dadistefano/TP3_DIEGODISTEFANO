@@ -27,6 +27,15 @@ namespace CarritoWeb
 
                 if (!IsPostBack)
                 {
+                    var categoriaBiz = new CategoriaNegocio();
+                    var listaCategorias = new List<Categoria>();
+                    listaCategorias.Add(new Categoria() { id = null, descripcion = "Todas las categorías" });
+                    listaCategorias.AddRange(categoriaBiz.listar());
+                    ddlCategorias.DataSource = listaCategorias;
+                    ddlCategorias.DataTextField = "descripcion";
+                    ddlCategorias.DataValueField = "id";
+                    ddlCategorias.DataBind();
+
                     articulosRep.DataSource = listaArticulo;
                     articulosRep.DataBind();
 
@@ -71,8 +80,19 @@ namespace CarritoWeb
         protected void BtDetalle_Click(object sender, EventArgs e)
         {
             int idArt = int.Parse(((Button)sender).CommandArgument);
-            Session["DetalleArticulo" + Session.SessionID] = idArt;
             Response.Redirect("DetalleArticulo.aspx");
+        }
+
+        protected void ddlCategorias_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var categoriaSeleccionada = ddlCategorias.SelectedValue;
+            var articuloBiz = new ArticuloNegocio();
+            if (categoriaSeleccionada != string.Empty)
+                articulosRep.DataSource = articuloBiz.BuscarArticuloXcategoria(categoriaSeleccionada);
+            else
+                articulosRep.DataSource = articuloBiz.listar();
+
+            articulosRep.DataBind();
         }
     }
 }

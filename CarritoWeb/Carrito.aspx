@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Carrito.aspx.cs" Inherits="CarritoWeb.Carrito" %>
+﻿<%@ Page EnableEventValidation="false" Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Carrito.aspx.cs" Inherits="CarritoWeb.Carrito" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -51,8 +51,8 @@
                                 <td>$<%#Eval("precio")%></td>
                                 <td>
                                     <asp:Button ID="btnQuitar" CssClass="btn btn-primary" Text="Quitar" CommandArgument='<%#Eval("id")%>' CommandName="artAEliminar" runat="server" OnClick="BtnQuitar_Click" />
+                                </td>
                             </tr>
-                            </td>
                            
                         </ItemTemplate>
                     </asp:Repeater>

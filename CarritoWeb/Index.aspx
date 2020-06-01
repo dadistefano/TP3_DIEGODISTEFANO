@@ -6,7 +6,7 @@
         <asp:Label runat="server" Text="ARTICULOS DEL CARRITOWEB" Font-Size="Small" Font-Bold="True"></asp:Label>
 
         <%--<div class="card-columns" style="margin-left: 5px; margin-right: 5px;">--%>
-
+        <asp:DropDownList ID="ddlCategorias" runat="server" OnSelectedIndexChanged="ddlCategorias_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList>
             <%--<div class="row">--%>
                 <div class="card-group">
                     <asp:Repeater runat="server" ID="articulosRep">
@@ -19,7 +19,7 @@
                                     <p class="card-text"><%#Eval("descripcion")%></p>
                                     <p class="card-text">$<%#Eval("precio")%></p>
                                     <asp:Button ID="btnComprar" CssClass="btn btn-primary" Text="Comprar" CommandArgument='<%#Eval("id")%>' CommandName="articuloCompra" runat="server" OnClick="btnComprar_Click" />
-                                    <asp:Button ID="BtDetalle" CssClass="btn btn-primary" runat="server" Text="Detalle" CommandArgument='<%#Eval("id")%>' CommandName="articuloDetalle" OnClick="BtDetalle_Click" />
+                                    <a href="DetalleArticulo.aspx?idart=<%#Eval("id")%>" CssClass="btn btn-primary" >Detalle</a>
                                 </div>
                             </div>
                         </ItemTemplate>

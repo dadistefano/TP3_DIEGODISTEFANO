@@ -22,7 +22,9 @@ namespace CarritoWeb
                 //
                 //int numeroArticulo = Convert.ToInt32(Session["NumeroArticulo" + Session.SessionID]);
                 var numeroArticulo = Convert.ToInt32(Request.QueryString["idart"]);
-                articulo = listaArt.Find(J => J.id == numeroArticulo);
+                articulo = listaArt.FirstOrDefault(J => J.id == numeroArticulo);
+                if (articulo == null)
+                    throw new Exception("Artículo no encontrado");
 
 
             }

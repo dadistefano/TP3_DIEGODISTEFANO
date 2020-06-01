@@ -305,7 +305,12 @@ namespace Negocio
 				datos.cerrarConexion();
 			}
 		}
-		public List<Articulo> BuscarArticuloXcategoria(string artBusqC)
+		/// <summary>
+		/// Busca artículos por id de categoría
+		/// </summary>
+		/// <param name="artBusqC"></param>
+		/// <returns></returns>
+		public List<Articulo> BuscarArticuloXcategoria(string artBusqC) //Ahora busca por ID
 		{
 			List<Articulo> lista = new List<Articulo>();
 			Articulo aux;
@@ -317,7 +322,7 @@ namespace Negocio
 				datos.setearQuery("select ARTICULOS.Id, ARTICULOS.Codigo, ARTICULOS.Nombre, ARTICULOS.Descripcion,MARCAS.Id as 'IdMarca'," +
 					" MARCAS.Descripcion as 'DescripciondeMarca', CATEGORIAS.Id as 'IDCategoria',CATEGORIAS.Descripcion as 'DescripciondeCategoria'," +
 					" ARTICULOS.ImagenUrl, ARTICULOS.Precio from ARTICULOS inner join MARCAS on (ARTICULOS.IdMarca = MARCAS.Id) " +
-					"inner join CATEGORIAS on (ARTICULOS.IdCategoria= CATEGORIAS.Id) where CATEGORIAS.Descripcion like '%'+ @BusquedaCat +'%'");
+					"inner join CATEGORIAS on (ARTICULOS.IdCategoria= CATEGORIAS.Id) where CATEGORIAS.Id = @BusquedaCat");
 				datos.agregarParametro("@BusquedaCat", artBusqC);
 				datos.ejecutarLector();
 				while (datos.lector.Read())
