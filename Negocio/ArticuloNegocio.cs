@@ -173,6 +173,50 @@ namespace Negocio
 				conexion.Close();
 			}
 		}
+		public Articulo BuscarArticuloXid(int artBusq)
+		{
+			Articulo art = new Articulo();
+			
+			ConexionDatos datos = new ConexionDatos();
+
+			try
+			{
+
+				datos.setearQuery("select ARTICULOS.Id, ARTICULOS.Codigo, ARTICULOS.Nombre, ARTICULOS.Descripcion,MARCAS.Id as 'IdMarca'," +
+					" MARCAS.Descripcion as 'DescripciondeMarca', CATEGORIAS.Id as 'IDCategoria',CATEGORIAS.Descripcion as 'DescripciondeCategoria'," +
+					" ARTICULOS.ImagenUrl, ARTICULOS.Precio from ARTICULOS inner join MARCAS on (ARTICULOS.IdMarca = MARCAS.Id) " +
+					"inner join CATEGORIAS on (ARTICULOS.IdCategoria= CATEGORIAS.Id) where ARTICULOS.Id like @BusquedaCod");
+				datos.agregarParametro("@BusquedaCod", artBusq);
+				datos.ejecutarLector();
+				while (datos.lector.Read())
+				{
+					Articulo aux = new Articulo();
+					aux.id = datos.lector.GetInt32(0);
+					aux.cod = datos.lector.GetString(1);
+					aux.nombre = datos.lector.GetString(2);
+					aux.descripcion = datos.lector.GetString(3);
+					aux.marca.id = datos.lector.GetInt32(4);
+					aux.marca.descripcion = datos.lector.GetString(5);
+					aux.categoria.id = datos.lector.GetInt32(6);
+					aux.categoria.descripcion = datos.lector.GetString(7);
+					aux.imagenUrl = datos.lector.GetString(8);
+					aux.precio = (double)datos.lector.GetDecimal(9);
+
+					art=aux;
+				}
+
+				return	art;
+			}
+			catch (Exception ex)
+			{
+
+				throw ex;
+			}
+			finally
+			{
+				datos.cerrarConexion();
+			}
+		}
 		public List<Articulo> BuscarArticuloXcodigo(string artBusq)
 		{
 			List<Articulo> lista = new List<Articulo>();

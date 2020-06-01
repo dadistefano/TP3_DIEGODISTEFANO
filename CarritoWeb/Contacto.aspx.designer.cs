@@ -11,25 +11,16 @@ namespace CarritoWeb
 {
 
 
-    public partial class Carrito
+    public partial class Contacto
     {
 
         /// <summary>
-        /// Control lblMensaje.
+        /// Control btnEnviar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMensaje;
-
-        /// <summary>
-        /// Control carritoRep.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater carritoRep;
+        protected global::System.Web.UI.WebControls.Button btnEnviar;
     }
 }

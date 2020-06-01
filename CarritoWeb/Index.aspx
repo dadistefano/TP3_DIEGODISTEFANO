@@ -3,11 +3,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-        <asp:Label runat="server" Text="ARTICULOS DEL CARRITOWEB"></asp:Label>
+        <asp:Label runat="server" Text="ARTICULOS DEL CARRITOWEB" Font-Size="Small" Font-Bold="True"></asp:Label>
 
-      <div class="card-columns" style="margin-left: 5px; margin-right: 5px;">
-          <%--
-           <div class="row">
+        <%--<div class="card-columns" style="margin-left: 5px; margin-right: 5px;">--%>
+
+            <%--<div class="row">--%>
                 <div class="card-group">
                     <asp:Repeater runat="server" ID="articulosRep">
                         <ItemTemplate>
@@ -18,7 +18,7 @@
                                     <p class="card-text"><%#Eval("marca.descripcion")%></p>
                                     <p class="card-text"><%#Eval("descripcion")%></p>
                                     <p class="card-text">$<%#Eval("precio")%></p>
-                                    <asp:Button ID="btnComprar" CssClass="btn btn-primary" Text="ComprarCarrito" CommandArgument='<%#Eval("id")%>' CommandName="articuloSeleccionado" runat="server" OnClientClick="btnComprar_Click" />
+                                    <asp:Button ID="btnComprar" CssClass="btn btn-primary" Text="Comprar" CommandArgument='<%#Eval("id")%>' CommandName="articuloCompra" runat="server" OnClick="btnComprar_Click" />
                                     <asp:Button ID="BtDetalle" CssClass="btn btn-primary" runat="server" Text="Detalle" CommandArgument='<%#Eval("id")%>' CommandName="articuloDetalle" OnClick="BtDetalle_Click" />
                                 </div>
                             </div>
@@ -27,12 +27,11 @@
                 </div>
             </div>
         </div>
-    </div>--%>
+    </div>
         
 
-        <%-- ESTO funciona perfecto, pero lo cambiamos por el repeater para poder usar el 
-            pasaje de parámetros con el CommandArgument de un botón (el PRUEBA), ya que de ESTE modo, 
-            no toma el valor. --%>
+<%--    <%-- foreach funciona pero no pasa por valor el articulo
+
         <% foreach (var item in listaArticulo)
             { %>
         <div class="card" style="width: 18rem;">
@@ -41,12 +40,14 @@
                 <h5 class="card-title"><% = item.nombre %></h5>
                 <p class="card-text"><% = item.descripcion %></p>
                 <a href="DetalleArticulo.aspx?idart=<% = item.id.ToString() %>" class="btn btn-primary">Detalle</a>
-                <a href="Carrito.aspx?idart=<% = item.id.ToString() %>" class="btn btn-primary">Comprar</a>
+                <<a href="Carrito.aspx?idart=<% = item.id.ToString() %>" class="btn btn-primary">Comprar</a>
+                <asp:Button ID="btnComprar" runat="server" CommandArgument="<% = art.id.ToString() %>" Text="Comprar" class="btn btn-primary" OnClick="btnComprar_Click" />
+                
             </div>
         </div>
          <% } %>
 
-    </div>
+    </div>--%>
 
     
 
