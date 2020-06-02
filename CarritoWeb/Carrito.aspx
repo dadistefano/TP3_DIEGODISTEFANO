@@ -3,35 +3,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-<%--      <div class="row"> //No me funciona con FOREACH
-            <div class="col">
-                <table class="table">
-                    <tr>
-                        <td>Nombre</td>
-                        <td>Marca</td>
-                        <td>Descripcion</td>
-                    </tr>
-                    <%foreach (var art in listaCarrito)
-                        {
-                    %>
-
-                    <tr>
-                        <td><% = art.nombre %></td>
-                        <td><% = art.marca.descripcion %></td>
-                        <td><% = art.descripcion %></td>
-                        <td><a href="Carrito.aspx?idQuitar=<% = art.id.ToString() %>" class="btn btn-primary">Eliminar</a></td>
-                        <%--<asp:Button ID="btnQuitar" runat="server" Text="Quitar" CommandArgument="<% = art.id.ToString() %>" OnClick="BtnQuitar_Click"/>%>
-
-                    </tr>
-                     <%} %>
-                </table>
-
-            </div>
-
-        </div>--%>
 
     <div class="container">
-        <div class="row">
+        <%--<div class="row">--%>
             <asp:Label runat="server" ID="lblMensaje" Visible="false"></asp:Label>
             <table class="table">
                 <thead>
@@ -58,9 +32,10 @@
                     </asp:Repeater>
                 </tbody>
             </table>
-        </div>
-    </div>
+        <%--</div>--%>
     
+        <h2>Debe Abonar: $<% = totalCarrito %></h2>
+    </div>
 
 
 

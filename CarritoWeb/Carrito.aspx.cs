@@ -12,42 +12,19 @@ namespace CarritoWeb
     public partial class Carrito : System.Web.UI.Page
     {
         //public List<Articulo> listaCarrito { get; set; } //Del Foreach
-
+        public double totalCarrito = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             try
             {
-                //1ra OPCION con el FORARCH que no FUNCIONO!!!
-                //listaCarrito = (List<Articulo>)Session[Session.SessionID + "listaCarrito"];
-
-                //var ArtQuitar = Request.QueryString["idQuitar"];
-                //if (ArtQuitar != null)
-                //{
-                //    Articulo articuloQuitar = listaCarrito.Find(J => J.id == int.Parse(ArtQuitar));
-                //    listaCarrito.Remove(articuloQuitar);
-                //  Session[Session.SessionID + "listaCarrito"] = listaCarrito;
-                //}
-                //else if (Request.QueryString["idart"] != null)
-                //{
-                //    //obtengo lista original (el listado completo)
-                //   List<Articulo> listaOriginal = (List<Articulo>)Session[Session.SessionID + "listaCarrito"];
-                //   var ArtSeleccionado = Convert.ToInt32(Request.QueryString["idart"]);
-                //    var prueba = (List<Articulo>)Session["listaCarrito"];
-                //    Articulo articulo = listaOriginal.Find(J => J.id == ArtSeleccionado); //me tira error aca!!
-
-                //    //obtengo la lista de favoritos de la session
-                //    if (listaCarrito == null)
-                //       listaCarrito = new List<Articulo>();
-
-                //   listaCarrito.Add(articulo);
-                //   Session[Session.SessionID + "listaCarrito"] = listaCarrito;
-                //}
                 if (!IsPostBack)
                 {
                     var carritoArt = (CarritoWebArticulos)Session[Session.SessionID + "carrito"];
                     if (CarritoTieneArticulos(carritoArt))
                     {
                         CargarListaCarrito(carritoArt);
+                        totalCarrito = sumarArticulo(carritoArt);
                     }
                     else
                     {
@@ -60,6 +37,18 @@ namespace CarritoWeb
                 Session.Add(Session.SessionID + "error", ex.ToString());
                 Response.Redirect("Error.aspx");
             }
+        }
+
+        private double sumarArticulo(CarritoWebArticulos carritoArt)
+        {
+            foreach(var sumaArt in carritoArt.listadoCarritoWeb)
+            {
+                totalCarrito += sumaArt.precio;
+                
+            }
+            return totalCarrito;
+
+            throw new NotImplementedException();
         }
 
         private void MostrarMensaje(string mensaje)
