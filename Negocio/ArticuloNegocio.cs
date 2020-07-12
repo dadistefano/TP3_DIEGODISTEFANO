@@ -310,50 +310,50 @@ namespace Negocio
 		/// </summary>
 		/// <param name="artBusqC"></param>
 		/// <returns></returns>
-		public List<Articulo> BuscarArticuloXcategoria(string artBusqC) //Ahora busca por ID
-		{
-			List<Articulo> lista = new List<Articulo>();
-			Articulo aux;
-			ConexionDatos datos = new ConexionDatos();
-
-			try
+			public List<Articulo> BuscarArticuloXcategoria(string artBusqC) //Ahora busca por ID
 			{
+				List<Articulo> lista = new List<Articulo>();
+				Articulo aux;
+				ConexionDatos datos = new ConexionDatos();
 
-				datos.setearQuery("select ARTICULOS.Id, ARTICULOS.Codigo, ARTICULOS.Nombre, ARTICULOS.Descripcion,MARCAS.Id as 'IdMarca'," +
-					" MARCAS.Descripcion as 'DescripciondeMarca', CATEGORIAS.Id as 'IDCategoria',CATEGORIAS.Descripcion as 'DescripciondeCategoria'," +
-					" ARTICULOS.ImagenUrl, ARTICULOS.Precio from ARTICULOS inner join MARCAS on (ARTICULOS.IdMarca = MARCAS.Id) " +
-					"inner join CATEGORIAS on (ARTICULOS.IdCategoria= CATEGORIAS.Id) where CATEGORIAS.Id = @BusquedaCat");
-				datos.agregarParametro("@BusquedaCat", artBusqC);
-				datos.ejecutarLector();
-				while (datos.lector.Read())
+				try
 				{
-					aux = new Articulo();
-					aux.id = datos.lector.GetInt32(0);
-					aux.cod = datos.lector.GetString(1);
-					aux.nombre = datos.lector.GetString(2);
-					aux.descripcion = datos.lector.GetString(3);
-					aux.marca.id = datos.lector.GetInt32(4);
-					aux.marca.descripcion = datos.lector.GetString(5);
-					aux.categoria.id = datos.lector.GetInt32(6);
-					aux.categoria.descripcion = datos.lector.GetString(7);
-					aux.imagenUrl = datos.lector.GetString(8);
-					aux.precio = (double)datos.lector.GetDecimal(9);
 
-					lista.Add(aux);
+					datos.setearQuery("select ARTICULOS.Id, ARTICULOS.Codigo, ARTICULOS.Nombre, ARTICULOS.Descripcion,MARCAS.Id as 'IdMarca'," +
+						" MARCAS.Descripcion as 'DescripciondeMarca', CATEGORIAS.Id as 'IDCategoria',CATEGORIAS.Descripcion as 'DescripciondeCategoria'," +
+						" ARTICULOS.ImagenUrl, ARTICULOS.Precio from ARTICULOS inner join MARCAS on (ARTICULOS.IdMarca = MARCAS.Id) " +
+						"inner join CATEGORIAS on (ARTICULOS.IdCategoria= CATEGORIAS.Id) where CATEGORIAS.Id = @BusquedaCat");
+					datos.agregarParametro("@BusquedaCat", artBusqC);
+					datos.ejecutarLector();
+					while (datos.lector.Read())
+					{
+						aux = new Articulo();
+						aux.id = datos.lector.GetInt32(0);
+						aux.cod = datos.lector.GetString(1);
+						aux.nombre = datos.lector.GetString(2);
+						aux.descripcion = datos.lector.GetString(3);
+						aux.marca.id = datos.lector.GetInt32(4);
+						aux.marca.descripcion = datos.lector.GetString(5);
+						aux.categoria.id = datos.lector.GetInt32(6);
+						aux.categoria.descripcion = datos.lector.GetString(7);
+						aux.imagenUrl = datos.lector.GetString(8);
+						aux.precio = (double)datos.lector.GetDecimal(9);
+
+						lista.Add(aux);
+					}
+
+					return lista;
 				}
+				catch (Exception ex)
+				{
 
-				return lista;
+					throw ex;
+				}
+				finally
+				{
+					datos.cerrarConexion();
+				}
 			}
-			catch (Exception ex)
-			{
-
-				throw ex;
-			}
-			finally
-			{
-				datos.cerrarConexion();
-			}
-		}
 
 		public List<Articulo> DetalleArticulo(string artDetalleID)
 		{

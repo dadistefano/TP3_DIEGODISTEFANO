@@ -67,3 +67,25 @@ C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion
 C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP3_DIEGO_DISTEFANO v0.6\TP2_DIEGO_DISTEFANO\obj\Debug\Presentacion.csprojAssemblyReference.cache
 C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP3_DIEGO_DISTEFANO v0.6\TP2_DIEGO_DISTEFANO\obj\Debug\TP2_DIEGO_DISTEFANO.exe
 C:\Users\Dieguito\OneDrive - frgp.utn.edu.ar\TSP - 3ro Cuatrimestre\Programacion 3\TP3_DIEGO_DISTEFANO v0.6\TP2_DIEGO_DISTEFANO\obj\Debug\TP2_DIEGO_DISTEFANO.pdb
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\bin\Debug\TP2_DIEGO_DISTEFANO.exe.config
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\bin\Debug\TP2_DIEGO_DISTEFANO.exe
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\bin\Debug\TP2_DIEGO_DISTEFANO.pdb
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\bin\Debug\Dominio.dll
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\bin\Debug\Negocio.dll
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\bin\Debug\AccesoDatos.dll
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\bin\Debug\Dominio.pdb
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\bin\Debug\Negocio.pdb
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\bin\Debug\AccesoDatos.pdb
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\obj\Debug\Presentacion.csprojAssemblyReference.cache
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\obj\Debug\TP2_DIEGO_DISTEFANO.AltaArticulo.resources
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\obj\Debug\TP2_DIEGO_DISTEFANO.BuscarArticulo.resources
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\obj\Debug\TP2_DIEGO_DISTEFANO.DetalleArticulo.resources
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\obj\Debug\TP2_DIEGO_DISTEFANO.Ingreso.resources
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\obj\Debug\TP2_DIEGO_DISTEFANO.ListarArticulos.resources
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\obj\Debug\TP2_DIEGO_DISTEFANO.Menu.resources
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\obj\Debug\TP2_DIEGO_DISTEFANO.Properties.Resources.resources
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\obj\Debug\TP2_DIEGO_DISTEFANO.exe
+C:\Users\Dieguito\source\repos\TP3_DIEGODISTEFANO\TP2_DIEGO_DISTEFANO\obj\Debug\TP2_DIEGO_DISTEFANO.pdb

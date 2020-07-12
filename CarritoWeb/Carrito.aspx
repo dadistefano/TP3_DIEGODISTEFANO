@@ -34,7 +34,9 @@
             </table>
         <%--</div>--%>
     
-        <h2>Debe Abonar: $<% = totalCarrito %></h2>
+                           <%--<h2>Debe Abonar:</h2>--%>
+                    <asp:Label Text="Debe abonar:" runat="server" CssClass="alert-heading"/>
+                    <asp:Label ID="lbTotalCarrito" runat="server" Text=""></asp:Label>
     </div>
 
 

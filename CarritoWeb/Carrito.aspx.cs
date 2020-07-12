@@ -20,16 +20,8 @@ namespace CarritoWeb
             {
                 if (!IsPostBack)
                 {
-                    var carritoArt = (CarritoWebArticulos)Session[Session.SessionID + "carrito"];
-                    if (CarritoTieneArticulos(carritoArt))
-                    {
-                        CargarListaCarrito(carritoArt);
-                        totalCarrito = sumarArticulo(carritoArt);
-                    }
-                    else
-                    {
-                        MostrarMensaje("No hay artículos en el carrito");
-                    }
+                        MostrarInformacionCarrito();
+                
                 }
             }
             catch (Exception ex)
@@ -39,16 +31,17 @@ namespace CarritoWeb
             }
         }
 
-        private double sumarArticulo(CarritoWebArticulos carritoArt)
+        private double SumarArticulo(CarritoWebArticulos carritoArt)
         {
-            foreach(var sumaArt in carritoArt.listadoCarritoWeb)
+            double total = 0;
+            foreach (var sumaArt in carritoArt.listadoCarritoWeb)
             {
-                totalCarrito += sumaArt.precio;
-                
-            }
-            return totalCarrito;
+                total += sumaArt.precio;
 
-            throw new NotImplementedException();
+            }
+            return total;
+
+            //throw new NotImplementedException();
         }
 
         private void MostrarMensaje(string mensaje)
@@ -76,11 +69,23 @@ namespace CarritoWeb
             carritoArt.listadoCarritoWeb.RemoveAt(indexArticulo);
             Session[Session.SessionID + "carrito"] = carritoArt;
 
-            if (!CarritoTieneArticulos(carritoArt))
-                MostrarMensaje("No hay artículos en el carrito");
 
-            CargarListaCarrito(carritoArt);
+            MostrarInformacionCarrito();
+        }
+        private void MostrarInformacionCarrito()
+        {
+            var carritoArt = (CarritoWebArticulos)Session[Session.SessionID + "carrito"];
+            if (CarritoTieneArticulos(carritoArt))
+            {
+                CargarListaCarrito(carritoArt);
+                lbTotalCarrito.Text = SumarArticulo(carritoArt).ToString();
+            }
+            else
+            {
+                MostrarMensaje("No hay artículos en el carrito");
+            }
         }
     }
+
     
 }
